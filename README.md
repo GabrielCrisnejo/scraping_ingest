@@ -1,22 +1,13 @@
 # This project performs web scraping on the news portal [Yogonet International](https://www.yogonet.com/international/) to extract key information from news articles.
 
-### Requirements:
-- Python
-- Selenium
-- Pandas
-
+### Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 ### Running the Script:
-1. Install dependencies:
-   ```bash
-   pip install selenium webdriver-manager pandas
-   ```
-2. Run the scraping script:
-   ```bash
-   python scraping.py
-   ```
-3. Perform post-processing:
-   ```bash
-   python post_processing.py
+
+```bash
+python main.py
    ```
 
 ## 1. Web Scraping
@@ -52,7 +43,7 @@ In addition,
 ### Storage:
 The post-processed data is saved as a CSV file (`post_processed_data.csv`) inside a dedicated directory named `post_processed_data/`.
 
-## 4. Output Files
+## 3. Output Files
 - `scraped_data/scraped_data.csv` - Raw scraped data.
 - `post_processed_data/post_processed_data.csv` - Post-processed data with computed metrics.
 
