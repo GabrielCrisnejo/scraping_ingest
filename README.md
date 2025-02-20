@@ -47,3 +47,12 @@ The post-processed data is saved as a CSV file (`post_processed_data.csv`) insid
 - `scraped_data/scraped_data.csv` - Raw scraped data.
 - `post_processed_data/post_processed_data.csv` - Post-processed data with computed metrics.
 
+## 4. Docker implementation
+To run the code using docker first build the docker image placed in the working directory,
+```bash
+docker build -t webscraping:1.0 .
+   ```
+And then run the docker container
+```bash
+docker run -t webscraping:1.0
+   ```
