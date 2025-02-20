@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
-from settings import URL, SCRAPED_DATA_PATH
+from src.settings import URL, SCRAPED_DATA_PATH
 
 os.makedirs(os.path.dirname(SCRAPED_DATA_PATH), exist_ok=True)
 

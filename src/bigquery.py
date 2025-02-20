@@ -1,7 +1,7 @@
 import pandas as pd
 from google.oauth2 import service_account
 from google.cloud import bigquery
-from settings import POST_PROCESSED_DATA_PATH, PROJECT_ID, DATASET_ID, TABLE_ID, SERVICEACCOUNT
+from src.settings import POST_PROCESSED_DATA_PATH, PROJECT_ID, DATASET_ID, TABLE_ID, SERVICEACCOUNT
 
 def upload_to_bigquery():
     # Configuración de BigQuery

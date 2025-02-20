@@ -1,6 +1,6 @@
-from scraping import scrape_data
-from post_processing import process_data
-from bigquery import upload_to_bigquery
+from src.scraping import scrape_data
+from src.post_processing import process_data
+from src.bigquery import upload_to_bigquery
 
 def main():
     print("Starting web scraping...")

@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from urllib.parse import urlparse
-from settings import SCRAPED_DATA_PATH, POST_PROCESSED_DATA_PATH
+from src.settings import SCRAPED_DATA_PATH, POST_PROCESSED_DATA_PATH
 
 os.makedirs(os.path.dirname(POST_PROCESSED_DATA_PATH), exist_ok=True)
 
