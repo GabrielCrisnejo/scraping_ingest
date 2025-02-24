@@ -24,7 +24,7 @@ def scrape_data():
     try:
         driver.get(URL)
 
-        wait = WebDriverWait(driver, 10)
+        wait = WebDriverWait(driver, 30)
         products = wait.until(EC.presence_of_all_elements_located((By.XPATH, '//div[contains(@class,"contenedor_dato_modulo ")]//div[contains(@class,"volanta_titulo")]')))
 
         title, kicker, image, link = [], [], [], []
@@ -46,7 +46,8 @@ def scrape_data():
                 print(f"Error extracting data from product: {e}")
 
         df = pd.DataFrame({'title': title, 'kicker': kicker, 'image': image, 'link': link})
-        df.to_csv(SCRAPED_DATA_PATH, index=False)
+        print(df.head())
+        df.to_csv(SCRAPED_DATA_PATH, index=False) 
 
     except Exception as e:
         print(f"Error during scraping: {e}")
