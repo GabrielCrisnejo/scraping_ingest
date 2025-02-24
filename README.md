@@ -2,7 +2,7 @@
 
 This document provides a comprehensive overview of the architecture and functionality of the web scraping project. It outlines the process of collecting news articles from an online source, processing the data, storing it in BigQuery for structured querying, and deploying the entire pipeline to Google Cloud Run. The document covers each phase of the project, from data extraction using Selenium to the final deployment steps on Google Cloud, ensuring a seamless integration for continuous operation in a cloud environment.
 
-This project automates the process of scraping news articles from Yogonet International, processing the scraped data, and uploading it to Google BigQuery. The pipeline is containerized using Docker and deployed on Google Cloud Run for easy scalability and management.
+This project automates the process of scraping news articles from [Yogonet International](https://www.yogonet.com/international/) , processing the scraped data, and uploading it to Google BigQuery. The pipeline is containerized using Docker and deployed on Google Cloud Run for easy scalability and management.
 
 ## General considerations
 
@@ -71,7 +71,7 @@ After the deployment is successful, the service will be accessible via the Cloud
 
 ### Check the service status:
 
-To check if the service is up and running, send a GET request to the root endpoint (\texttt{/}):
+To check if the service is up and running, send a GET request to the root endpoint (/):
 
 ```
 $ curl https://<your-cloud-run-url>/
@@ -84,7 +84,7 @@ This will return the status of the service, confirming if it’s running or enco
 
 ### Trigger the service:
 
-To trigger the main functionality of the application, send a GET request to the \texttt{/run} endpoint:
+To trigger the main functionality of the application, send a GET request to the /run endpoint:
 
 ```
 $ curl https://<your-cloud-run-url>/run
